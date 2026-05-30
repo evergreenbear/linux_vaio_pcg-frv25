@@ -1,0 +1,1 @@
+SUBSYSTEM=="backlight", KERNEL=="sony", ACTION=="add", RUN+="/bin/sh -c 'setpci -s 0:6.0 0x9D.B=40 && echo 7 > /sys$devpath/brightness'"
